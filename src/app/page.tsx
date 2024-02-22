@@ -15,9 +15,11 @@ export default function Home() {
     <div className="min-h-screen">
       
     <Section>
-        <div className="px-[1.4rem] py-[2rem]">
+      <Container>
+        <div className="py-[2rem]">
           <h1 className="font-semibold">menup.</h1>
         </div>
+      </Container>
     </Section>
      <Section>  
       <div className="py-[4.5rem] px-[1.4rem]">
@@ -50,7 +52,7 @@ export default function Home() {
 
       <Container>
 <div className="max-w-[600px] mx-auto"> 
-    <h1 className="text-4xl font-bold">FAQ's</h1>
+    <h1 className="text-4xl font-bold">FAQ&apos;s</h1>
 
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
@@ -69,7 +71,7 @@ export default function Home() {
         <AccordionItem value="item-3">
           <AccordionTrigger>Is it animated?</AccordionTrigger>
           <AccordionContent>
-            Yes. It's animated by default, but you can disable it if you prefer.
+            Yes. It&apos;s animated by default, but you can disable it if you prefer.
           </AccordionContent>
         </AccordionItem>
       </Accordion>
