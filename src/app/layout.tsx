@@ -23,7 +23,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        {children}
+        <main className="flex-1">{children}</main>
       </body>
     </html>
   )

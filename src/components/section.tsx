@@ -1,11 +1,22 @@
+import { cn } from "@/lib/utils"
 import React from "react"
 
-export const Section = ({ children }: { children: React.ReactNode }) => {
+export const Section = ({
+  children,
+  className,
+  leftBottom = true,
+  rightBottom = true,
+}: {
+  children: React.ReactNode
+  className?: string
+  leftBottom?: boolean
+  rightBottom?: boolean
+}) => {
   return (
-    <section className="border-neutral-800 border-b px-[3%]">
+    <section className={cn("border-neutral-800 border-b px-[3%]", className)}>
       <div className="border-neutral-800 border-x max-w-6xl mx-auto relative">
-        <LineDot.leftBottom />
-        <LineDot.rightBottom />
+        {leftBottom && <LineDot.leftBottom />}
+        {rightBottom && <LineDot.rightBottom />}
         {children}
       </div>
     </section>
